@@ -1572,11 +1572,11 @@ a:hover {
 }
 
 .rating__star_fill {
-  background-image: url(../../img/icons/icon-star-fill.svg);
+  background-image: url(../img/icons/icon-star-fill.svg);
 }
 
 .rating__star_no-fill {
-  background-image: url(../../img/icons/icon-star-no-fill.svg);
+  background-image: url(../img/icons/icon-star-no-fill.svg);
 }
 
 .card {
