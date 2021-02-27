@@ -1805,6 +1805,156 @@ a:hover {
   margin-top: 30px;
 }
 
+.pricing {
+  padding: 112px 0;
+  background-color: #252b42;
+}
+
+.pricing__items {
+  margin: 106px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1045px;
+}
+
+.pricing-card {
+  position: relative;
+  width: 327px;
+  margin-bottom: 30px;
+  padding: 50px 40px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+}
+
+.pricing-card_new::before {
+  content: "New";
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90px;
+  height: 90px;
+  top: -26px;
+  right: 16.5px;
+  border-radius: 50%;
+  background-color: #e77c40;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.1px;
+}
+
+.pricing-card__label {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #252b42;
+}
+
+.pricing-card__descr {
+  margin-top: 35px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #737373;
+}
+
+.pricing-card__price {
+  margin-top: 35px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #23a6f0;
+}
+
+.pricing-card__price::after {
+  content: "$";
+}
+
+.pricing-card__price-period {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #8ec2f2;
+}
+
+.pricing-card__btn {
+  margin-top: 35px;
+  padding: 15px 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+}
+
+.pricing-card__list {
+  margin-top: 35px;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pricing-card__list-item {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+
+.pricing-card__list-item:last-child {
+  margin-bottom: 0px;
+}
+
+.pricing-card__list-item::before {
+  content: url(../img/icons/icon-mark.svg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #bdbdbd;
+}
+
+.pricing-card__list-item_included::before {
+  background-color: #2dc071;
+}
+
 @media (min-width: 576px) {
   .container,
   .container-sm {
