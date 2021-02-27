@@ -1534,12 +1534,10 @@ a:hover {
 
 .button_square {
   border-radius: 5px;
-  padding: 15px 25px;
 }
 
 .button_circle {
   border-radius: 9999px;
-  padding: 15px 36px;
 }
 
 .button_transparent {
@@ -1581,6 +1579,58 @@ a:hover {
   background-image: url(../../img/icons/icon-star-no-fill.svg);
 }
 
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  height: 452px;
+}
+
+.card__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__label {
+  width: 100%;
+  position: relative;
+  margin: 0 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.card__title {
+  width: 100%;
+  margin: 15px 20px 0 20px;
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-shadow: 0px 13px 19px rgba(0, 0, 0, 0.24);
+}
+
+.card__btn {
+  position: relative;
+  margin: 15px 20px 17.5px 20px;
+  padding: 10px 36px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
 .header {
   padding-bottom: 112px;
   background-image: url(../img/bg/hero-bg.jpg);
@@ -1614,6 +1664,7 @@ a:hover {
 .header__menu-btn {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 15px 25px;
 }
 
 .header__menu-btn,
@@ -1644,6 +1695,7 @@ a:hover {
 
 .header__btn {
   margin-right: 10px;
+  padding: 15px 36px;
 }
 
 .features {
@@ -1738,6 +1790,19 @@ a:hover {
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #737373;
+}
+
+.content {
+  padding: 122px 0;
+  background-color: #252b42;
+}
+
+.content__descr {
+  margin-bottom: 66px;
+}
+
+.content__card {
+  margin-top: 30px;
 }
 
 @media (min-width: 576px) {
