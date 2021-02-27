@@ -1521,9 +1521,9 @@ a:hover {
 .button {
   display: inline-block;
   background-color: #23a6f0;
-  -webkit-transition: 0.2s ease-in 0s;
-  -o-transition: 0.2s ease-in 0s;
-  transition: 0.2s ease-in 0s;
+  -webkit-transition: 0.2s ease-out 0s;
+  -o-transition: 0.2s ease-out 0s;
+  transition: 0.2s ease-out 0s;
   text-align: center;
   cursor: pointer;
 }
@@ -1953,6 +1953,78 @@ a:hover {
 
 .pricing-card__list-item_included::before {
   background-color: #2dc071;
+}
+
+.contact {
+  padding: 90px 0;
+  background-image: url(../img/bg/contact-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact__label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+
+.contact__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+
+.contact__form {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 602px;
+  color: #252b42;
+}
+
+.contact__form input,
+.contact__form select {
+  padding: 0 29px 0 18px;
+  margin-bottom: 20px;
+  height: 50px;
+  background: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  color: #252b42;
+}
+
+.contact__input-name {
+  width: 295px;
+}
+
+.contact__input-email {
+  width: 285px;
+}
+
+.contact__price-plan {
+  width: 295px;
+}
+
+.contact__contact-time {
+  width: 285px;
+}
+
+.contact__input-message {
+  width: 100%;
+  min-height: 140px;
 }
 
 @media (min-width: 576px) {
