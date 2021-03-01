@@ -174,7 +174,7 @@
     </section>
     <!-- / Section Content -->
 
-    <!-- Section pricing -->
+    <!-- Section Pricing -->
     <section class="pricing">
         <div class="container">
             <h2 class="pricing__title section-title">Industry</h2>
@@ -259,38 +259,62 @@
             </div>
         </div>
     </section>
-    <!-- / Section pricing -->
+    <!-- / Section Pricing -->
 
-    <!-- Contact pricing -->
+    <!-- Section Contact -->
     <section class="contact">
         <div class="container">
             <h5 class="contact__label">Contact Us</h5>
             <h2 class="contact__title">Make an Appointment</h2>
-            <form class="contact__form" action="#" method="post">
-                <input class="contact__input-name" type="text" name="input-name" id="name" placeholder="Full Name *">
-                <input class="contact__input-email" type="email" name="input-email" id="email" placeholder="Email *">
-                <select style="color:black" class="contact__price-plan" name="select-price-plan" id="price-plan">
-                    <option value="" disabled selected hidden>Please Select</option>
-                    <option value="FREE">FREE</option>
-                    <option value="Silver">Silver</option>
-                    <option value="GOLD">GOLD</option>
-                </select>
-                <select style="color:black" class="contact__contact-time" name="select-contact-time" id="contact-time">
-                    <option value="" disabled selected hidden>4:00 Available</option>
-                    <option>2:00 Not available</option>
-                    <option>4:00 Available</option>
-                    <option>6:00 Not available</option>
-                    <option>8:00 Not available</option>
-                    <option>10:00 Available</option>
-                    <option>12:00 Available</option>
-                </select>
-                <input class="contact__input-message" type="text" name="input-message" id="message"
-                    placeholder="Message">
-                <div class="contact__btn button button_square">Book Appointment</div>
+
+            <form action="#" class="contact__form form">
+                <div class="input">
+                    <input type="text" name="contact-name" id="contact-name" placeholder="Full Name *">
+                </div>
+                <div class="input">
+                    <input type="email" name="contact-email" id="contact-email" placeholder="Email *">
+                </div>
+                <div class="select">
+                    <div class="select__wrapper">
+                        <input type="text" name="contact-price-plan" id="contact-price-plan"
+                            placeholder="Please Select">
+                        <ul class="select__list">
+                            <li class="select__list-item">Free</li>
+                            <li class="select__list-item">Silver</li>
+                            <li class="select__list-item">Gold</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="select">
+                    <div class="select__wrapper">
+                        <input type="text" name="contact-time" id="contact-time" placeholder="4:00 Available" value="">
+                        <ul class="select__list">
+                            <li class="select__list-item select__list-item_muted">0:00 Not available</li>
+                            <li class="select__list-item select__list-item_muted">2:00 Not available</li>
+                            <li class="select__list-item">4:00 Available</li>
+                            <li class="select__list-item select__list-item_muted">6:00 Not available</li>
+                            <li class="select__list-item">8:00 Availableer</li>
+                            <li class="select__list-item">10:00 Available</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="textarea">
+                    <textarea name="contact-message" id="contact-message" cols="30" rows="10"
+                        placeholder="Message"></textarea>
+                </div>
+                <div class="form__btn button button_square">Book Appointment</div>
             </form>
+
         </div>
     </section>
-    <!-- / Contact pricing -->
+
+    <!-- <li class="form__select-list-item form__select-list-item_muted">0:00 Not available</li>
+                            <li class="form__select-list-item form__select-list-item_muted">2:00 Not available</li>
+                            <li class="form__select-list-item">4:00 Available</li>
+                            <li class="form__select-list-item form__select-list-item_muted">6:00 Not available</li>
+                            <li class="form__select-list-item">8:00 Available</li>
+                            <li class="form__select-list-item">10:00 Available</li> -->
+    <!-- / Section Contact -->
 
 
     <!-- SCRIPTS -->

@@ -1,0 +1,129 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input,
+.select,
+.textarea {
+    width: 290px;
+    margin-bottom: 20px;
+
+    input,
+    textarea {
+        width: 100%;
+        background: #f9f9f9;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 14px;
+        line-height: 28px;
+        color: $text-medium;
+        outline: none;
+    }
+    input::placeholder,
+    textarea::placeholder {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        color: $state-muted;
+    }
+
+    &_active input {
+        box-shadow: $shadow-extra-low;
+    }
+}
+
+.select {
+    input {
+        padding-right: 40px;
+        appearance: none;
+        cursor: pointer;
+    }
+
+    &__wrapper {
+        position: relative;
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 8px;
+            height: 2px;
+            transform: translateY(-50%);
+            background-color: $text-medium;
+            transition: transform $transition-base;
+            pointer-events: none;
+        }
+
+        &::before {
+            top: 50%;
+            right: 20px;
+            transform: rotate(45deg);
+        }
+        &::after {
+            top: 50%;
+            right: 16px;
+            transform: rotate(-45deg);
+        }
+    }
+
+    &__list {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        margin-top: 4px;
+        padding: 0;
+        width: 100%;
+        background: #f9f9f9;
+        border: 0px;
+        border-radius: 5px;
+        box-shadow: $shadow-extra-low;
+        transition: $transition-base;
+    }
+
+    &__list-item {
+        list-style-type: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        line-height: 28px;
+        color: $text-medium;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $gray-light-2;
+        }
+
+        &_muted {
+            color: $state-muted;
+        }
+    }
+}
+
+.select {
+    &_active input {
+        box-shadow: $shadow-extra-low;
+    }
+    &_active &__wrapper {
+        &::before {
+            transform: rotate(-45deg);
+        }
+        &::after {
+            transform: rotate(45deg);
+        }
+    }
+    &_active &__list {
+        height: initial;
+        opacity: 1;
+        border: 1px solid #e6e6e6;
+    }
+}
+
+.textarea {
+    width: 100%;
+    textarea {
+        height: 140px;
+    }
+}

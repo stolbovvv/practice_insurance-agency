@@ -1424,6 +1424,8 @@ progress {
 }
 
 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
 }
@@ -1629,6 +1631,201 @@ a:hover {
   line-height: 22px;
   text-align: center;
   letter-spacing: 0.2px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.input,
+.select,
+.textarea {
+  width: 290px;
+  margin-bottom: 20px;
+}
+
+.input input,
+.input textarea,
+.select input,
+.select textarea,
+.textarea input,
+.textarea textarea {
+  width: 100%;
+  background: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #737373;
+  outline: none;
+}
+
+.input input::-webkit-input-placeholder, .input textarea::-webkit-input-placeholder, .select input::-webkit-input-placeholder, .select textarea::-webkit-input-placeholder, .textarea input::-webkit-input-placeholder, .textarea textarea::-webkit-input-placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #bdbdbd;
+}
+
+.input input::-moz-placeholder, .input textarea::-moz-placeholder, .select input::-moz-placeholder, .select textarea::-moz-placeholder, .textarea input::-moz-placeholder, .textarea textarea::-moz-placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #bdbdbd;
+}
+
+.input input:-ms-input-placeholder, .input textarea:-ms-input-placeholder, .select input:-ms-input-placeholder, .select textarea:-ms-input-placeholder, .textarea input:-ms-input-placeholder, .textarea textarea:-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #bdbdbd;
+}
+
+.input input::-ms-input-placeholder, .input textarea::-ms-input-placeholder, .select input::-ms-input-placeholder, .select textarea::-ms-input-placeholder, .textarea input::-ms-input-placeholder, .textarea textarea::-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #bdbdbd;
+}
+
+.input input::placeholder,
+.input textarea::placeholder,
+.select input::placeholder,
+.select textarea::placeholder,
+.textarea input::placeholder,
+.textarea textarea::placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #bdbdbd;
+}
+
+.input_active input,
+.select_active input,
+.textarea_active input {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.select input {
+  padding-right: 40px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+.select__wrapper {
+  position: relative;
+}
+
+.select__wrapper::after,
+.select__wrapper::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 2px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #737373;
+  -webkit-transition: -webkit-transform 0.2s ease-out 0s;
+  transition: -webkit-transform 0.2s ease-out 0s;
+  -o-transition: transform 0.2s ease-out 0s;
+  transition: transform 0.2s ease-out 0s;
+  transition: transform 0.2s ease-out 0s, -webkit-transform 0.2s ease-out 0s;
+  pointer-events: none;
+}
+
+.select__wrapper::before {
+  top: 50%;
+  right: 20px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.select__wrapper::after {
+  top: 50%;
+  right: 16px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.select__list {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  margin-top: 4px;
+  padding: 0;
+  width: 100%;
+  background: #f9f9f9;
+  border: 0px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: 0.2s ease-out 0s;
+  -o-transition: 0.2s ease-out 0s;
+  transition: 0.2s ease-out 0s;
+}
+
+.select__list-item {
+  list-style-type: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #737373;
+  cursor: pointer;
+}
+
+.select__list-item:hover {
+  background-color: #ececec;
+}
+
+.select__list-item_muted {
+  color: #bdbdbd;
+}
+
+.select_active input {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.select_active .select__wrapper::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.select_active .select__wrapper::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.select_active .select__list {
+  height: initial;
+  opacity: 1;
+  border: 1px solid #e6e6e6;
+}
+
+.textarea {
+  width: 100%;
+}
+
+.textarea textarea {
+  height: 140px;
 }
 
 .header {
@@ -1980,51 +2177,11 @@ a:hover {
 }
 
 .contact__form {
-  margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 602px;
-  color: #252b42;
+  max-width: 600px;
 }
 
-.contact__form input,
-.contact__form select {
-  padding: 0 29px 0 18px;
-  margin-bottom: 20px;
-  height: 50px;
-  background: #f9f9f9;
-  border: 1px solid #e6e6e6;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 5px;
-  color: #252b42;
-}
-
-.contact__input-name {
-  width: 295px;
-}
-
-.contact__input-email {
-  width: 285px;
-}
-
-.contact__price-plan {
-  width: 295px;
-}
-
-.contact__contact-time {
-  width: 285px;
-}
-
-.contact__input-message {
-  width: 100%;
-  min-height: 140px;
+.contact__form .form__btn {
+  padding: 15px 40px;
 }
 
 @media (min-width: 576px) {
