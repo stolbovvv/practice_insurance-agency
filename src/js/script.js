@@ -17,26 +17,17 @@ window.addEventListener('DOMContentLoaded', () => {
     // })
 
     const selects = document.querySelectorAll('.select');
-    const contactTime = document.getElementById('contact-time');
-    const contactPricePlan = document.getElementById('contact-price-plan');
-    const secletLists = document.querySelectorAll('.select__list-item');
-
-
-
     selects.forEach(item => {
+        item.addEventListener('click', () => item.classList.toggle('select_active'), true)
+        console.log(item);
+    })
+
+    const secletLists = document.querySelectorAll('.select__list-item');
+    secletLists.forEach(item => {
         item.addEventListener('click', () => {
-            item.classList.toggle('select_active');
+            item.parentElement.parentElement.firstElementChild.value = item.innerHTML;
+            item.parentElement.parentElement.parentElement.classList.remove('select_active');
         })
     })
 
-    secletLists.forEach(item => {
-        item.addEventListener('click', () => {
-            contactTime.value = item.innerHTML;
-        })
-    })
-    secletLists.forEach(item => {
-        item.addEventListener('click', () => {
-            contactPricePlan.value = item.innerHTML;
-        })
-    })
 })
