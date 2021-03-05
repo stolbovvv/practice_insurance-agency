@@ -20,18 +20,31 @@
 <body>
     <!-- Section Header -->
     <header class="header">
+
+        <nav class="header__menu">
+            <div class="container">
+                <div class="menu">
+                    <div class="header__logo menu__logo">BrandName</div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="header__menu-link menu__link">Home</a></li>
+                        <li class="menu__item"><a href="#" class="header__menu-link menu__link">Product</a></li>
+                        <li class="menu__item"><a href="#" class="header__menu-link menu__link">Pricing</a></li>
+                        <li class="menu__item"><a href="#" class="header__menu-link menu__link">Contact</a></li>
+                    </ul>
+                    <img class="menu__icon-search" src="img/icons/mobile/m-icon-search.svg" alt="search">
+                    <img class="menu__icon-shopping-cart" src="img/icons/mobile/m-icon-shopping-cart.svg" alt="cart">
+                    <div class="menu__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="#" class="header__login-link menu__login">Login</a>
+                    <div class="header__menu-btn menu__btn button button_square">Become a member</div>
+                </div>
+            </div>
+        </nav>
+
         <div class="container">
-            <nav class="header__menu menu">
-                <div class="header__logo menu__logo">BrandName</div>
-                <ul class="menu__list">
-                    <li class="menu__item"><a href="#" class="header__menu-link menu__link">Home</a></li>
-                    <li class="menu__item"><a href="#" class="header__menu-link menu__link">Product</a></li>
-                    <li class="menu__item"><a href="#" class="header__menu-link menu__link">Pricing</a></li>
-                    <li class="menu__item"><a href="#" class="header__menu-link menu__link">Contact</a></li>
-                </ul>
-                <a href="#" class="header__login-link menu__login">Login</a>
-                <div class="header__menu-btn menu__btn button button_square">Become a member</div>
-            </nav>
             <h1 class="header__title">We Ensure A Best Insurance Service</h1>
             <h4 class="header__subtitle">We know how large objects will act,
                 but things on all scale.</h4>
@@ -380,7 +393,23 @@
         </div>
         <div class="footer__bottom">
             <div class="container">
-
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="footer__reserved">
+                            Made With Love By Figmaland All Right Reserved
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer__social">
+                            <a href="#"><img src="img/icons/icon-facebook.svg" alt="facebook"
+                                    class="footer__social-icon"></a>
+                            <a href="#"><img src="img/icons/icon-instagram.svg" alt="instagram"
+                                    class="footer__social-icon"></a>
+                            <a href="#"><img src="img/icons/icon-twitter.svg" alt="twitter"
+                                    class="footer__social-icon"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

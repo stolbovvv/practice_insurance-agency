@@ -1,9 +1,11 @@
 .menu {
     display: flex;
     align-items: center;
+    z-index: 20;
 
     &__logo {
         margin-right: 75px;
+        z-index: 10;
     }
 
     &__list {
@@ -11,6 +13,16 @@
         padding: 0;
         display: flex;
         list-style-type: none;
+        z-index: 5;
+        @media (max-width: 991px) {
+            width: 100%;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            height: 100px;
+            background: #252b42;
+            z-index: 0;
+        }
     }
 
     &__item {
@@ -24,11 +36,51 @@
         text-decoration: none;
     }
 
+    &__icon-search {
+        flex: 0 0 24px;
+    }
+
+    &__icon-shopping-cart {
+        flex: 0 0 24px;
+    }
+
+    &__burger {
+        margin-left: auto;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 24px;
+
+        span {
+            width: 100%;
+            height: 3px;
+            margin: 2px 0px;
+            background-color: white;
+            transition: $transition-base;
+            &:nth-child(2) {
+                width: 66.66%;
+            }
+            &:nth-child(3) {
+                width: 33.33%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+
     &__login {
         display: inline-block;
         margin-left: auto;
         margin-right: 45px;
         text-decoration: none;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
     }
 
     &__btn {
@@ -40,6 +92,10 @@
             content: url(../img/icons/icon-arrow-right.svg);
             display: inline-block;
             margin: 0 0 0 15px;
+        }
+
+        @media (max-width: 991px) {
+            display: none;
         }
     }
 }

@@ -95,4 +95,27 @@
             }
         }
     }
+
+    &__bottom {
+        padding: 25px 0;
+    }
+
+    &__reserved {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: $text-medium;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__social-icon {
+        margin: 0 11px;
+        flex: 0 0 23px;
+        height: 23px;
+    }
 }
