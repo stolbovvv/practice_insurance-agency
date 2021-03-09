@@ -1,101 +1,78 @@
 .menu {
-    display: flex;
-    align-items: center;
-    z-index: 20;
+    position: relative;
+    height: 50px;
+    z-index: 1;
+
+    @media (max-width: 991px) {
+        background-color: $text-dark;
+    }
+
+    &__wrapper {
+        display: flex;
+    }
 
     &__logo {
-        margin-right: 75px;
-        z-index: 10;
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &__logo-link {
+    }
+
+    &__list-container {
+        @media (max-width: 991px) {
+            position: absolute;
+            background-color: $text-dark;
+            top: 25px;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
     }
 
     &__list {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        list-style-type: none;
-        z-index: 5;
-        @media (max-width: 991px) {
-            width: 100%;
-            position: absolute;
-            top: 100px;
-            left: 0;
-            height: 100px;
-            background: #252b42;
-            z-index: 0;
-        }
-    }
-
-    &__item {
-        margin-right: 21px;
-        &:last-child {
-            margin-right: 0;
-        }
     }
 
     &__link {
-        text-decoration: none;
-    }
-
-    &__icon-search {
-        flex: 0 0 24px;
-    }
-
-    &__icon-shopping-cart {
-        flex: 0 0 24px;
-    }
-
-    &__burger {
-        margin-left: auto;
-        margin-right: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-between;
-        width: 24px;
-
-        span {
-            width: 100%;
-            height: 3px;
-            margin: 2px 0px;
-            background-color: white;
-            transition: $transition-base;
-            &:nth-child(2) {
-                width: 66.66%;
-            }
-            &:nth-child(3) {
-                width: 33.33%;
-            }
-        }
-
-        @media (min-width: 992px) {
-            display: none;
-        }
     }
 
     &__login {
-        display: inline-block;
         margin-left: auto;
-        margin-right: 45px;
-        text-decoration: none;
-
+        margin-right: 0;
         @media (max-width: 991px) {
             display: none;
         }
     }
 
+    &__login-link {
+    }
+
     &__btn {
-        position: relative;
-        margin-right: 0;
-        display: flex;
-
-        &::after {
-            content: url(../img/icons/icon-arrow-right.svg);
-            display: inline-block;
-            margin: 0 0 0 15px;
-        }
-
         @media (max-width: 991px) {
             display: none;
         }
+    }
+
+    &__icon {
+        display: none;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+
+        &_search {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        @media (max-width: 991px) {
+            display: block;
+        }
+    }
+
+    &__burger {
+        display: none;
+        margin-left: auto;
+        margin-right: 0;
     }
 }

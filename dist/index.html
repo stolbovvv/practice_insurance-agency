@@ -18,402 +18,42 @@
 </head>
 
 <body>
-    <!-- Section Header -->
-    <header class="header">
 
-        <nav class="header__menu">
+    <!-- section Header -->
+    <header class="header">
+        <div class="header__menu menu">
             <div class="container">
-                <div class="menu">
-                    <div class="header__logo menu__logo">BrandName</div>
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="header__menu-link menu__link">Home</a></li>
-                        <li class="menu__item"><a href="#" class="header__menu-link menu__link">Product</a></li>
-                        <li class="menu__item"><a href="#" class="header__menu-link menu__link">Pricing</a></li>
-                        <li class="menu__item"><a href="#" class="header__menu-link menu__link">Contact</a></li>
-                    </ul>
-                    <img class="menu__icon-search" src="img/icons/mobile/m-icon-search.svg" alt="search">
-                    <img class="menu__icon-shopping-cart" src="img/icons/mobile/m-icon-shopping-cart.svg" alt="cart">
+                <div class="menu__wrapper">
+                    <div class="menu__logo"><a href="#" class="menu__logo-link">BrandName</a></div>
+                    <nav class="menu__list-container">
+                        <ul class="menu__list">
+                            <li class="menu__link"><a href="#">Home</a></li>
+                            <li class="menu__link"><a href="#">Product</a></li>
+                            <li class="menu__link"><a href="#">Pricing</a></li>
+                            <li class="menu__link"><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu__login"><a href="#" class="menu__login-link">Login</a></div>
+                    <div class="menu__btn button button_square">Become a member</div>
+                    <img class="menu__icon menu__icon_search" src="img/icons/mobile/m-icon-search.svg" alt="search">
+                    <img class="menu__icon menu__icon_cart" src="img/icons/mobile/m-icon-shopping-cart.svg"
+                        alt="shopping-cart">
                     <div class="menu__burger">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                    <a href="#" class="header__login-link menu__login">Login</a>
-                    <div class="header__menu-btn menu__btn button button_square">Become a member</div>
                 </div>
             </div>
-        </nav>
-
+        </div>
         <div class="container">
-            <h1 class="header__title">We Ensure A Best Insurance Service</h1>
-            <h4 class="header__subtitle">We know how large objects will act,
-                but things on all scale.</h4>
+            <h1 class="header__title"></h1>
+            <p class="header__text"></p>
             <div class="header__btn button button_circle">Get Quote Now</div>
             <div class="header__btn button button_circle button_transparent">Learn More</div>
         </div>
     </header>
-    <!-- / Section Header -->
-
-    <!-- Section Features -->
-    <section class="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="features_item">
-                        <img class="features__icon" src="img/icons/features/icon-features-1.svg" alt="Peace of Mind">
-                        <h5 class="features_title">Peace of Mind</h5>
-                        <p class="features__descr">So it really behaves like neither.
-                            Now we have given up.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="features_item">
-                        <img class="features__icon" src="img/icons/features/icon-features-2.svg" alt="Set For Life">
-                        <h5 class="features_title">Set For Life</h5>
-                        <p class="features__descr">They were used to create the
-                            machines that launched.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="features_item">
-                        <img class="features__icon" src="img/icons/features/icon-features-3.svg" alt="Satisfaction">
-                        <h5 class="features_title">100% Satisfaction</h5>
-                        <p class="features__descr">So it really behaves like neither.
-                            Now we have given up.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- / Section Features -->
-
-    <!-- Section Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="testimonials__title section-title">Industry</h2>
-            <p class="testimonials__descr section-descr">Problems trying to resolve the conflict between <br>
-                the two major realms of Classical physics: Newtonian mechanics</p>
-            <div class="row">
-                <div class="col-lg-5 offset-lg-1">
-                    <div class="testimonials__item">
-                        <img class="testimonials__user-picture" src="img/testimonials/user-1.png" alt="Даша">
-                        <div class="testimonials__user-name">Regina Miles</div>
-                        <div class="testimonials__user-specialty">Designer</div>
-                        <div class="testimonials__user-rating rating">
-                            <span class="rating__star rating__star_fill"></span>
-                            <span class="rating__star rating__star_fill"></span>
-                            <span class="rating__star rating__star_fill"></span>
-                            <span class="rating__star rating__star_fill"></span>
-                            <span class="rating__star rating__star_no-fill"></span>
-                        </div>
-                        <p class="testimonials__user-review">This proved to be impossible using the traditional
-                            concepts of space and time. Einstein developed a
-                            new view of time first and then space. This proved
-                            to be impossible using the traditional concepts of
-                            space and time. Einstein developed a new view
-                            of time first and then space.</p>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="testimonials__item">
-                        <img class="testimonials__user-picture" src="img/testimonials/user-2.png" alt="Валера">
-                        <div class="testimonials__user-name">David Bowie</div>
-                        <div class="testimonials__user-specialty">Devoloper</div>
-                        <div class="testimonials__user-rating rating">
-                            <span class="rating__star rating__star_fill"></span>
-                            <span class="rating__star rating__star_fill"></span>
-                            <span class="rating__star rating__star_fill"></span>
-                            <span class="rating__star rating__star_no-fill"></span>
-                            <span class="rating__star rating__star_no-fill"></span>
-                        </div>
-                        <p class="testimonials__user-review">This proved to be impossible using the traditional
-                            concepts of space and time. Einstein developed a
-                            new view of time first and then space. This proved
-                            to be impossible using the traditional concepts of
-                            space and time. Einstein developed a new view
-                            of time first and then space.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- / Section Testimonials -->
-
-    <!-- Section Content -->
-    <section class="content">
-        <div class="container-fluid">
-            <h2 class="content__title section-title">Industry</h2>
-            <p class="content__descr section-descr">Problems trying to resolve the conflict between <br>
-                the two major realms of Classical physics: Newtonian mechanics</p>
-            <div class="row justify-content-center">
-                <div class="col-xl-3 col-md-5 col-12">
-                    <div class="content__card card">
-                        <img class="card__img" src="img/content/content-bg-1.png" alt="Management">
-                        <h6 class="card__label">Tax Management</h6>
-                        <h4 class="card__title">Life Tips From Top Ten
-                            Adventure Travelers</h4>
-                        <div class="card__btn button button_circle">Viwe Project</div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-5 col-12">
-                    <div class="content__card card">
-                        <img class="card__img" src="img/content/content-bg-2.png" alt="Management">
-                        <h6 class="card__label">Tax Management</h6>
-                        <h4 class="card__title">Life Tips From Top Ten
-                            Adventure Travelers</h4>
-                        <div class="card__btn button button_circle">Viwe Project</div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-5 col-12">
-                    <div class="content__card card">
-                        <img class="card__img" src="img/content/content-bg-3.png" alt="Management">
-                        <h6 class="card__label">Tax Management</h6>
-                        <h4 class="card__title">Life Tips From Top Ten
-                            Adventure Travelers</h4>
-                        <div class="card__btn button button_circle">Viwe Project</div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-5 col-12">
-                    <div class="content__card card">
-                        <img class="card__img" src="img/content/content-bg-4.png" alt="Management">
-                        <h6 class="card__label">Tax Management</h6>
-                        <h4 class="card__title">Life Tips From Top Ten
-                            Adventure Travelers</h4>
-                        <div class="card__btn button button_circle">Viwe Project</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- / Section Content -->
-
-    <!-- Section Pricing -->
-    <section class="pricing">
-        <div class="container">
-            <h2 class="pricing__title section-title">Industry</h2>
-            <p class="pricing__descr section-descr">Problems trying to resolve the conflict between <br>
-                the two major realms of Classical physics: Newtonian mechanics</p>
-            <div class="pricing__items">
-                <div class="pricing-card ">
-                    <h3 class="pricing-card__label">FREE</h3>
-                    <div class="pricing-card__descr">
-                        Organize across all
-                        <br>
-                        apps by hand
-                    </div>
-                    <div class="pricing-card__price">0</div>
-                    <div class="pricing-card__price-period">Per Month</div>
-                    <div class="pricing-card__btn button button_square">Try for free</div>
-                    <ul class="pricing-card__list">
-                        <li class="pricing-card__list-item pricing-card__list-item_included">Unlimited product updates
-                        </li>
-                        <li class="pricing-card__list-item pricing-card__list-item_included">Unlimited product updates
-                        </li>
-                        <li class="pricing-card__list-item pricing-card__list-item_included">Unlimited product updates
-                        </li>
-                        <li class="pricing-card__list-item">1GB Cloud storage
-                        </li>
-                        <li class="pricing-card__list-item">Email and community
-                            support
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="pricing-card pricing-card_new">
-                    <h3 class="pricing-card__label">Silver</h3>
-                    <div class="pricing-card__descr">
-                        Organize across all
-                        <br>
-                        apps by hand
-                    </div>
-                    <div class="pricing-card__price">9.99</div>
-                    <div class="pricing-card__price-period">Per Month</div>
-                    <div class="pricing-card__btn button button_square">Try for free</div>
-                    <ul class="pricing-card__list">
-                        <li class="pricing-card__list-item pricing-card__list-item_included">Unlimited product updates
-                        </li>
-                        <li class="pricing-card__list-item pricing-card__list-item_included">Unlimited product updates
-                        </li>
-                        <li class="pricing-card__list-item pricing-card__list-item_included">Unlimited product updates
-                        </li>
-                        <li class="pricing-card__list-item">1GB Cloud storage
-                        </li>
-                        <li class="pricing-card__list-item">Email and community
-                            support
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="pricing-card">
-                    <h3 class="pricing-card__label">COLD</h3>
-                    <div class="pricing-card__descr">
-                        Organize across all
-                        <br>
-                        apps by hand
-                    </div>
-                    <div class="pricing-card__price">19.99</div>
-                    <div class="pricing-card__price-period">Per Month</div>
-                    <div class="pricing-card__btn button button_square">Try for free</div>
-                    <ul class="pricing-card__list">
-                        <li class="pricing-card__list-item pricing-card__list-item_included">Unlimited product updates
-                        </li>
-                        <li class="pricing-card__list-item pricing-card__list-item_included">Unlimited product updates
-                        </li>
-                        <li class="pricing-card__list-item pricing-card__list-item_included">Unlimited product updates
-                        </li>
-                        <li class="pricing-card__list-item">1GB Cloud storage
-                        </li>
-                        <li class="pricing-card__list-item">Email and community
-                            support
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- / Section Pricing -->
-
-    <!-- Section Contact -->
-    <section class="contact">
-        <div class="container">
-            <h5 class="contact__label">Contact Us</h5>
-            <h2 class="contact__title">Make an Appointment</h2>
-
-            <form action="#" class="contact__form form">
-                <div class="input">
-                    <input type="text" name="contact-name" id="contact-name" placeholder="Full Name *">
-                </div>
-                <div class="input">
-                    <input type="email" name="contact-email" id="contact-email" placeholder="Email *">
-                </div>
-                <div class="select" id="1">
-                    <div class="select__wrapper">
-                        <input type="text" name="contact-price-plan" id="contact-price-plan" placeholder="Please Select"
-                            autocomplete="off">
-                        <ul class="select__list">
-                            <li class="select__list-item">Free</li>
-                            <li class="select__list-item">Silver</li>
-                            <li class="select__list-item">Gold</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="select" id="2">
-                    <div class="select__wrapper">
-                        <input type="text" name="contact-time" id="contact-time" placeholder="4:00 Available"
-                            autocomplete="off">
-                        <ul class="select__list">
-                            <li class="select__list-item select__list-item_muted">0:00 Not available</li>
-                            <li class="select__list-item select__list-item_muted">2:00 Not available</li>
-                            <li class="select__list-item">4:00 Available</li>
-                            <li class="select__list-item select__list-item_muted">6:00 Not available</li>
-                            <li class="select__list-item">8:00 Availableer</li>
-                            <li class="select__list-item">10:00 Available</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="textarea">
-                    <textarea name="contact-message" id="contact-message" cols="30" rows="10"
-                        placeholder="Message"></textarea>
-                </div>
-                <div class="form__btn button button_square">Book Appointment</div>
-            </form>
-
-        </div>
-    </section>
-    <!-- / Section Contact -->
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9">
-                        <div class="footer__title">Consulting Agency For Your Business</div>
-                        <div class="footer__text">the quick fox jumps over the lazy dog</div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="footer__btn button button_square">Contact Us</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer__main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="footer__menu-title">Company Info</div>
-                        <ul class="footer__menu">
-                            <li class="footer__menu-item"><a href="#">About Us</a></li>
-                            <li class="footer__menu-item"><a href="#">Carrier</a></li>
-                            <li class="footer__menu-item"><a href="#">We are hiring</a></li>
-                            <li class="footer__menu-item"><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="footer__menu-title">Legal</div>
-                        <ul class="footer__menu">
-                            <li class="footer__menu-item"><a href="#">About Us</a></li>
-                            <li class="footer__menu-item"><a href="#">Carrier</a></li>
-                            <li class="footer__menu-item"><a href="#">We are hiring</a></li>
-                            <li class="footer__menu-item"><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="footer__menu-title">Features</div>
-                        <ul class="footer__menu">
-                            <li class="footer__menu-item"><a href="#">Business Marketing</a></li>
-                            <li class="footer__menu-item"><a href="#">User Analytic</a></li>
-                            <li class="footer__menu-item"><a href="#">Live Chat</a></li>
-                            <li class="footer__menu-item"><a href="#">Unlimited Support</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="footer__menu-title">Resources</div>
-                        <ul class="footer__menu">
-                            <li class="footer__menu-item"><a href="#">IOS & Android</a></li>
-                            <li class="footer__menu-item"><a href="#">Watch a Demo</a></li>
-                            <li class="footer__menu-item"><a href="#">Customers</a></li>
-                            <li class="footer__menu-item"><a href="#">API</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="footer__menu-title">Get In Touch</div>
-                        <ul class="footer__menu">
-                            <li class="footer__menu-item footer__menu-item_tel"><a href="#">(480) 555-0103</a></li>
-                            <li class="footer__menu-item footer__menu-item_addres"><a href="#">4517 Washington Ave.
-                                    Manchester, Kentucky
-                                    39495</a></li>
-                            <li class="footer__menu-item footer__menu-item_mail"><a href="#">debra.holt@example.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer__bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9">
-                        <div class="footer__reserved">
-                            Made With Love By Figmaland All Right Reserved
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="footer__social">
-                            <a href="#"><img src="img/icons/icon-facebook.svg" alt="facebook"
-                                    class="footer__social-icon"></a>
-                            <a href="#"><img src="img/icons/icon-instagram.svg" alt="instagram"
-                                    class="footer__social-icon"></a>
-                            <a href="#"><img src="img/icons/icon-twitter.svg" alt="twitter"
-                                    class="footer__social-icon"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- / Footer -->
+    <!-- / section Header -->
 
     <!-- SCRIPTS -->
     <script src="js/script.min.js"></script>
