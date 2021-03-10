@@ -1,18 +1,13 @@
 // COLORS:
 $primary-color: #23a6f0;
-$secondary-color-1: #40bb15;
-$secondary-color-2: #3c403d;
+$second-color-1: #40bb15;
+$second-color-2: #3c403d;
 
-$white: #ffffff;
-
-$gray-light-1: #fafafa;
-$gray-light-2: #ececec;
-
-$text-dark: #252b42;
-$text-medium: #737373;
-$text-light: #ffffff;
-
-$background-gradient: linear-gradient(270deg, #d71489 -1.04%, #004788 100%);
+$white-color: #ffffff;
+$dark-color: #252b42;
+$gray-color: #737373;
+$gray-color-light-1: #fafafa;
+$gray-color-light-2: #ececec;
 
 $action-success: #2dc071;
 $action-hover: #2a7cc7;
@@ -20,7 +15,9 @@ $action-danger: #e74040;
 $action-alert: #e77c40;
 
 $state-muted: #bdbdbd;
-$state-disabled-element: #8ec2f2;
+$state-disabled: #8ec2f2;
+
+$background-gradient: linear-gradient(270deg, #d71489 -1.04%, #004788 100%);
 
 // TRANSITION:
 $transition-base: 0.2s ease-out 0s;

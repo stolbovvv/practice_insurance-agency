@@ -3,36 +3,3 @@
     font-family: "Montserrat", sans-serif;
     color: $white;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
-a {
-    color: $white;
-    &:hover {
-        color: $white;
-    }
-}
-
-.section-title {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 57px;
-    text-align: center;
-    letter-spacing: 0.2px;
-}
-.section-descr {
-    margin: 10px auto 0 auto;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.2px;
-}

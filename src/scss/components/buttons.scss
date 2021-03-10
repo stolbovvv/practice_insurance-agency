@@ -1,10 +1,36 @@
 .button {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: $primary-color;
+    transition: $transition-base;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px / 14px * 100%;
+    cursor: pointer;
+
+    @include hover-desktop(992) {
+        box-shadow: $shadow-extra-low;
+        background: $action-success;
+    }
+
     &_square {
+        border-radius: 5px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     &_circle {
+        border-radius: 9999px;
+        padding-left: 36px;
+        padding-right: 36px;
     }
 
     &_transparent {
+        background: transparent;
+        border: 1px solid $white-color;
+        @include hover-desktop(992) {
+            border-color: $action-success;
+        }
     }
 }
