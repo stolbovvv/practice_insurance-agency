@@ -1,0 +1,80 @@
+.testimonials {
+    padding: 112px 0 145px 0;
+    background-color: $state-disabled;
+    @media (max-width: 991px) {
+        padding: 75px 0 50px 0;
+    }
+
+    &__descr {
+        margin-top: 10px;
+    }
+
+    .row {
+        margin-top: 120px;
+        @media (max-width: 991px) {
+            margin-top: 60px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding: 30px 40px;
+        background-color: $white-color;
+        margin-left: 47px;
+        height: 100%;
+
+        @media (max-width: 991px) {
+            margin-left: 0;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+            height: initial;
+        }
+    }
+
+    &__user-img {
+        position: absolute;
+        top: 28px;
+        left: -47px;
+        width: 72px;
+        height: 72px;
+        border: 50%;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+
+    &__user-name {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px / 24px * 100%;
+        letter-spacing: 0.1px;
+        color: $dark-color;
+    }
+
+    &__user-specialty {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px / 14px * 100%;
+        letter-spacing: 0.2px;
+        color: $gray-color;
+    }
+
+    &__user-rating {
+        margin-top: 15px;
+        color: #f3cd03;
+        font-size: 22px;
+        line-height: 100%;
+    }
+
+    &__user-text {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px / 14px * 100%;
+        letter-spacing: 0.2px;
+        color: $gray-color;
+    }
+}

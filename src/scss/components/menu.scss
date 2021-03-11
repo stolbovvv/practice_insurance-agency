@@ -1,8 +1,12 @@
 .menu {
     position: relative;
+    z-index: 100;
 
     @media (max-width: 991px) {
+        position: fixed;
+        width: 100%;
         background-color: $dark-color;
+        box-shadow: $shadow-low;
     }
 
     &__wrapper {
@@ -10,8 +14,10 @@
         display: flex;
         align-items: center;
         padding: 30px 0;
-        z-index: 1;
+        z-index: 102;
+
         @media (max-width: 991px) {
+            top: 0;
             justify-content: space-between;
             background-color: $dark-color;
         }
@@ -60,7 +66,7 @@
             background-color: $dark-color;
             transform: translateY(-100%);
             transition: transform 0.5s ease-out;
-            z-index: 0;
+            z-index: 100;
 
             *:last-child {
                 margin-bottom: 0;
@@ -86,7 +92,6 @@
 
     &__list-item {
         font-weight: 600;
-
         line-height: 24px / 14px * 100%;
         letter-spacing: 0.2px;
 
@@ -128,7 +133,7 @@
 
     &__btn {
         position: relative;
-        padding-right: 52px !important;
+        padding-right: 52px;
 
         &::after {
             content: url(../img/icons/icon-arrow-right.svg);
@@ -167,7 +172,6 @@
         margin-left: 8px;
         width: 22px;
         height: 22px;
-
         cursor: pointer;
 
         span {

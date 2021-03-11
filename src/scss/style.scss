@@ -11,11 +11,13 @@
 @import "base/general.scss";
 
 // COMPONENTS:
-@import "components/menu.scss";
 @import "components/buttons.scss";
-@import "components/rating.scss";
+@import "components/menu.scss";
 @import "components/card.scss";
 @import "components/form.scss";
 
 // BLOCKS:
 @import "blocks/header.scss";
+@import "blocks/features.scss";
+@import "blocks/testimonials.scss";
+@import "blocks/content.scss";

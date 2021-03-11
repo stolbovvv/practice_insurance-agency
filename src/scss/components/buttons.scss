@@ -32,5 +32,9 @@
         @include hover-desktop(992) {
             border-color: $action-success;
         }
+        @media (max-width: 991px) {
+            color: $primary-color;
+            border-color: $primary-color;
+        }
     }
 }
