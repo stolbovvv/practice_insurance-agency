@@ -1,0 +1,173 @@
+.pricing {
+    padding: 112px 0 141px 0;
+    background-color: $dark-color;
+
+    @media (max-width: 991px) {
+        padding: 75px 0 124px 0;
+    }
+
+    .row {
+        margin-top: 80px;
+        @media (max-width: 991px) {
+            margin-top: 30px;
+        }
+    }
+
+    &__descr {
+        margin-top: 10px;
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 25px 0 30px 0;
+        padding: 50px 40px;
+        background-color: $white-color;
+        border-radius: 10px;
+
+        &_new::before {
+            content: "New";
+            position: absolute;
+            top: -25px;
+            right: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90px;
+            height: 90px;
+            border-radius: 52px;
+            background-color: #e77c40;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px / 24px * 100%;
+            letter-spacing: 0.1px;
+        }
+    }
+
+    &__card-label {
+        width: 100%;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px / 24px * 100%;
+        letter-spacing: 0.1px;
+        text-align: center;
+        color: $dark-color;
+    }
+
+    &__card-descr {
+        margin: 35px auto 0 auto;
+        max-width: 165px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px / 16px * 100%;
+        text-align: center;
+        letter-spacing: 0.1px;
+        text-align: center;
+        color: $gray-color;
+    }
+
+    &__card-price-block {
+        width: 100%;
+        margin-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media (max-width: 991px) {
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__card-price {
+        width: 100%;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 57px / 40px * 100%;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: $primary-color;
+
+        &::after {
+            content: "$";
+        }
+        @media (max-width: 991px) {
+            width: auto;
+            position: relative;
+            text-align: right;
+            &::after {
+                position: absolute;
+                top: 5px;
+                right: -15px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    &__card-period {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px / 16px * 100%;
+        letter-spacing: 0.1px;
+        text-align: center;
+        color: $state-disabled;
+
+        @media (max-width: 991px) {
+            display: flex;
+            align-items: flex-end;
+            width: auto;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: left;
+            padding-bottom: 5px;
+            padding-left: 5px;
+        }
+    }
+
+    &__card-btn {
+        margin-top: 35px;
+        width: 100%;
+        text-align: center;
+        @media (max-width: 991px) {
+            order: 1;
+        }
+    }
+
+    &__card-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 35px 0 0 0;
+        *:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__card-complete {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px / 14px * 100%;
+        letter-spacing: 0.2px;
+        color: $dark-color;
+        margin-bottom: 15px;
+
+        &::before {
+            content: url(../../img/icons/icon-mark.svg);
+            flex: 0 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: $state-muted;
+        }
+
+        &_include::before {
+            background-color: $action-success;
+        }
+    }
+}
