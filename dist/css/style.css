@@ -2156,29 +2156,60 @@ progress {
   position: relative;
 }
 
+.form__select-wrapper::before,
+.form__select-wrapper::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #252b42;
+  width: 8px;
+  height: 2px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 1px;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  -o-transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+
+.form__select-wrapper::before {
+  right: 15px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.form__select-wrapper::after {
+  right: 10px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.form__select-wrapper-focus::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.form__select-wrapper-focus::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .form__select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
-.form__select option {
-  display: none;
-}
-
 .form__select_muted {
   color: #bdbdbd;
-}
-
-.form__select-list {
-  position: absolute;
-  width: 100%;
-  padding: 0 20px 0 20px;
-  background: #f9f9f9;
-  border: 1px solid #e6e6e6;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 5px;
 }
 
 .form__textarea-wrapper {
@@ -2211,7 +2242,7 @@ progress {
   position: absolute;
   display: block;
   top: 50%;
-  left: 165px;
+  right: 17px;
   -webkit-transform: translateY(-35%);
       -ms-transform: translateY(-35%);
           transform: translateY(-35%);
@@ -7161,6 +7192,19 @@ progress {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+
+  .contact__title {
+    padding: 0;
+  }
+
+  .contact__form {
+    max-width: 100%;
+  }
+
+  .form__select-wrapper,
+  .form__input-wrapper {
+    width: 100%;
   }
 
   .form__btn::after {
