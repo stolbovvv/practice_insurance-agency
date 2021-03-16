@@ -5,6 +5,10 @@
     background-position: center;
     background-size: cover;
 
+    @media (max-width: 991px) {
+        padding: 115px 28px 113px 28px;
+    }
+
     &__label {
         font-weight: 700;
         font-size: 16px;
@@ -153,6 +157,9 @@
         }
 
         @media (max-width: 991px) {
+            width: 100%;
+            text-align: center;
+
             &::after {
                 display: none;
             }
