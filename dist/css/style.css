@@ -2042,7 +2042,7 @@ progress {
 }
 
 .pricing__card-complete::before {
-  content: url(../../img/icons/icon-mark.svg);
+  content: url(../img/icons/icon-mark.svg);
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -2339,15 +2339,15 @@ progress {
 }
 
 .footer__link-contact_tel::before {
-  content: url(../../img/icons/icon-phone.svg);
+  content: url(../img/icons/icon-phone.svg);
 }
 
 .footer__link-contact_map::before {
-  content: url(../../img/icons/icon-map.svg);
+  content: url(../img/icons/icon-map.svg);
 }
 
 .footer__link-contact_mail::before {
-  content: url(../../img/icons/icon-mail.svg);
+  content: url(../img/icons/icon-mail.svg);
 }
 
 .footer__bottom {

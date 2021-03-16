@@ -97,17 +97,17 @@
         }
         &_tel {
             &::before {
-                content: url(../../img/icons/icon-phone.svg);
+                content: url(../img/icons/icon-phone.svg);
             }
         }
         &_map {
             &::before {
-                content: url(../../img/icons/icon-map.svg);
+                content: url(../img/icons/icon-map.svg);
             }
         }
         &_mail {
             &::before {
-                content: url(../../img/icons/icon-mail.svg);
+                content: url(../img/icons/icon-mail.svg);
             }
         }
     }
